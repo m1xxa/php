@@ -1,0 +1,25 @@
+.side-menu {
+    background-color: gray;
+    color: darkgray;
+    min-height: 400px;
+}
+
+.side-menu ul li {
+    color: white;
+    margin: 18px;
+    font-size: 16px;
+}
+
+.side-menu ul li:hover {
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.btn-row {
+    height: 40px;
+}
+
+#text-field {
+    width: 33%;
+}
+
