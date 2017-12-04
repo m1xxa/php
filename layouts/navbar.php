@@ -15,8 +15,21 @@
                     <li class="active"><a href="/">Главная</a></li>
                     <li><a href="/about.php">О сайте</a></li>
                     <li><a href="/contact.php">Контакты</a></li>
+                    <li>
+                        <?php
+                        if(isset($_COOKIE['logined'])){
+                            echo "<a id=\"login\" href=\"/logout.php\">Выход</a>";
+                        } else echo "<a id=\"login\" href=\"/login.php\">Вход</a>"
+                        ?>
+
+                    </li>
+                    <?php
+                    if(isset($_COOKIE['logined'])){
+                        echo "<li><a id=\"login\" href=\"/control.php\">Control</a></li>";
+                    }
+                    ?>
                 </ul>
-            </div><!--/.nav-collapse -->
+            </div>
         </div>
     </div>
 
